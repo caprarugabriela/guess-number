@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Guess the number</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+  </link>
+</head>
+
+<body>
+  <main class="container">
+    <div class="welcome-screen">
+      <h1>I'm thinking at a random number <br>between 1-100</h1>
+      <h2>Dare to guess?</h2>
+
+      <section class="game-setting">
+        <p>Please select game dificulty:</p>
+        <button class="button-easy">Easy: Guess the number in 10 attempts (default)</button>
+        <button class="button-hard">Hard: Guess in 5 attempts</button>
+        <button
+          type="submit"
+          title="New game"
+          class="button-new-game"
+        >New game</button>
+      </section>
+    </div>
+
+    <section class="guess-area">
+      <h2 class="guess-feedback">Enter your guess below and press Enter</h2>
+      <input
+        type="number"
+        name="userInput"
+        class="user-input"
+      >
+    </section>
+
+    <section class="game-attempts">
+      <h3>Number of previous attempts: <span class="number-attempts">
+      </h3>
+      <h3>Your previous guesses: <span class="user-attempts"></span>
+      </h3>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
