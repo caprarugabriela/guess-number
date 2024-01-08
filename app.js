@@ -16,7 +16,11 @@ function enableUserInput() {
   userInput.disabled = false;
 }
 
-// Generare număr random
+function disableUserInput() {
+  userInput.disabled = true;
+}
+
+// Generare numar random
 function generateRandomNumber() {
   return Math.floor(Math.random() * 100) + 1;
 }
@@ -88,7 +92,7 @@ newGame.addEventListener('click', function () {
   document.querySelector('.button-easy').hidden = false;
   newGame.hidden = true;
   resetGame();
-  enableUserInput();
+  disableUserInput();
 });
 
 // Funcție pentru resetarea jocului
